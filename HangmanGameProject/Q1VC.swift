@@ -56,7 +56,7 @@ class Q1VC: UIViewController {
         
         if categoryLabel.text == "sports" {
             let answer = textField.text
-            var sportsLetters = ["t", "e", "n", "n", "i", "s"]
+            
 //        if answer != "t" || answer != "e" || answer != "n" || answer != "i" || answer != "s" {
             
             if answer == "t" {

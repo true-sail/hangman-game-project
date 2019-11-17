@@ -58,7 +58,7 @@
                                 <state key="normal" title="次へ"/>
                                 <connections>
                                     <action selector="didClickButton:" destination="JrO-bC-acl" eventType="touchUpInside" id="r5z-rE-OhF"/>
-                                    <segue destination="eYW-r3-ozJ" kind="show" id="7ia-6T-0Gc"/>
+                                    <segue destination="eYW-r3-ozJ" kind="show" identifier="" id="7ia-6T-0Gc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy4-m6-3EG">
@@ -103,8 +103,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここに文字数の分アンダーバーを表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBS-gc-MSK">
-                                <rect key="frame" x="18" y="152" width="379" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ _ _ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBS-gc-MSK">
+                                <rect key="frame" x="107" y="152" width="202" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -116,6 +116,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="決定"/>
                                 <connections>
+                                    <action selector="didClickButton:" destination="eYW-r3-ozJ" eventType="touchUpInside" id="HbX-VY-wIN"/>
                                     <action selector="didClickButton:" destination="sWo-87-fxZ" eventType="touchUpInside" id="q89-Ut-719"/>
                                 </connections>
                             </button>
@@ -136,6 +137,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="final answer"/>
                                 <connections>
+                                    <action selector="finalAnswer:" destination="eYW-r3-ozJ" eventType="touchUpInside" id="oie-xj-1oH"/>
                                     <action selector="finalAnswerButton:" destination="sWo-87-fxZ" eventType="touchUpInside" id="lLz-CT-6t2"/>
                                 </connections>
                             </button>
@@ -153,8 +155,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="カテゴリー名表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7B7-JO-7oV">
-                                <rect key="frame" x="118" y="84" width="179" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7B7-JO-7oV">
+                                <rect key="frame" x="177" y="84" width="61" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -165,10 +167,73 @@
                         <viewLayoutGuide key="safeArea" id="3ra-sM-jTi"/>
                     </view>
                     <navigationItem key="navigationItem" id="JKv-nF-0Eb"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="pXl-cI-2V7" id="W0v-k6-jwp"/>
+                        <outlet property="categoryLabel" destination="7B7-JO-7oV" id="wzC-DG-dFa"/>
+                        <outlet property="countLabel" destination="3Eb-F5-Fz3" id="gA4-dR-PI7"/>
+                        <outlet property="questionLabel" destination="dBS-gc-MSK" id="Obm-iL-cLC"/>
+                        <outlet property="textField" destination="ufA-8k-MUx" id="hKg-HA-QYs"/>
+                        <segue destination="nC5-lG-Eo0" kind="show" identifier="toR2" id="hah-eV-GQR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjB-nn-hjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="1446"/>
+            <point key="canvasLocation" x="644.92753623188412" y="1445.7589285714284"/>
+        </scene>
+        <!--R2VC-->
+        <scene sceneID="UoE-ql-x7J">
+            <objects>
+                <viewController id="nC5-lG-Eo0" customClass="R2VC" customModule="HangManGameProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4I-oS-W3q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF3-Tt-gob">
+                                <rect key="frame" x="93" y="111" width="227" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-Zt-8ke">
+                                <rect key="frame" x="181" y="572" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="JrO-bC-acl" eventType="touchUpInside" id="CHT-nu-KFB"/>
+                                    <action selector="didClickButton:" destination="nC5-lG-Eo0" eventType="touchUpInside" id="uMX-pW-O0l"/>
+                                    <segue destination="Rr0-JN-oSR" kind="show" id="QER-ov-II7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="48s-5O-zEj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vYC-wG-Pbp"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="PF3-Tt-gob" id="OHy-s4-84V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gqs-yP-bnb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="2126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="btB-ou-5bO">
+            <objects>
+                <viewController id="Rr0-JN-oSR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aoh-lW-Ou1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IRn-9V-oMz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qIA-g1-91p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6I-xq-Pg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="2822"/>
         </scene>
         <!--Q1VC-->
         <scene sceneID="saB-ZD-NyD">

@@ -24,7 +24,6 @@ class R1VC: UIViewController {
 //
 
         if finalAnswer == "tennis" {
-            print(finalAnswer)
             resultLabel.text = "正解！"
            resultLabel.textColor = .red
         } else {
@@ -34,7 +33,7 @@ class R1VC: UIViewController {
     }
     
     @IBAction func didClickButton(_ sender: UIButton) {
-    
+     
     }
     
 }

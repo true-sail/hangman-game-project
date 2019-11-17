@@ -51,6 +51,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let selectedCategory = categories[indexPath.row]
         
         performSegue(withIdentifier: "toQ1", sender: selectedCategory)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,5 +63,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
            //NextViewControllerの変数selectedValueに選ばれた値を設定
              Q1VC.selectedCategory = sender as! String
         }
+        
+      
+        
     }
 }
