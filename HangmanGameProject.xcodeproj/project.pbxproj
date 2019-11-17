@@ -17,6 +17,8 @@
 		176873812381483700F48515 /* R1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176873802381483700F48515 /* R1VC.swift */; };
 		1768738323814E2700F48515 /* Q2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768738223814E2700F48515 /* Q2VC.swift */; };
 		176873852381532500F48515 /* R2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176873842381532500F48515 /* R2VC.swift */; };
+		17E583F22381845500B49E28 /* Q3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E583F12381845500B49E28 /* Q3VC.swift */; };
+		17E583F4238189FE00B49E28 /* R3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E583F3238189FE00B49E28 /* R3VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		176873802381483700F48515 /* R1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R1VC.swift; path = HangmanGameProject/R1VC.swift; sourceTree = SOURCE_ROOT; };
 		1768738223814E2700F48515 /* Q2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Q2VC.swift; path = HangmanGameProject/Q2VC.swift; sourceTree = SOURCE_ROOT; };
 		176873842381532500F48515 /* R2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = R2VC.swift; path = HangmanGameProject/R2VC.swift; sourceTree = SOURCE_ROOT; };
+		17E583F12381845500B49E28 /* Q3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Q3VC.swift; path = HangmanGameProject/Q3VC.swift; sourceTree = SOURCE_ROOT; };
+		17E583F3238189FE00B49E28 /* R3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = R3VC.swift; path = HangmanGameProject/R3VC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				175D18E1237FE6C6009B4270 /* Q1VC.swift */,
 				1768738223814E2700F48515 /* Q2VC.swift */,
 				176873842381532500F48515 /* R2VC.swift */,
+				17E583F12381845500B49E28 /* Q3VC.swift */,
+				17E583F3238189FE00B49E28 /* R3VC.swift */,
 			);
 			path = HangManGameProject;
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				176873812381483700F48515 /* R1VC.swift in Sources */,
+				17E583F4238189FE00B49E28 /* R3VC.swift in Sources */,
 				176873852381532500F48515 /* R2VC.swift in Sources */,
+				17E583F22381845500B49E28 /* Q3VC.swift in Sources */,
 				175D18E2237FE6C6009B4270 /* Q1VC.swift in Sources */,
 				175D18D2237FDB3E009B4270 /* ViewController.swift in Sources */,
 				175D18CE237FDB3E009B4270 /* AppDelegate.swift in Sources */,

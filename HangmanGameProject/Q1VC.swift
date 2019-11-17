@@ -72,8 +72,9 @@ class Q1VC: UIViewController {
             } else {
                         count -= 1
                         countLabel.text = "\(count)"
+                
                         if count <= 0 {
-                            countLabel.text = "Game Over"
+                    countLabel.text = "Game Over"
                 }
                 
             

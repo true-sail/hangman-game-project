@@ -219,21 +219,131 @@
             </objects>
             <point key="canvasLocation" x="653" y="2126"/>
         </scene>
-        <!--View Controller-->
+        <!--Q3VC-->
         <scene sceneID="btB-ou-5bO">
             <objects>
-                <viewController id="Rr0-JN-oSR" sceneMemberID="viewController">
+                <viewController id="Rr0-JN-oSR" customClass="Q3VC" customModule="HangManGameProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aoh-lW-Ou1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-ZL-0Aa">
+                                <rect key="frame" x="176" y="84" width="61" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ _ _ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR0-cu-Gvd">
+                                <rect key="frame" x="106" y="172" width="202" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i9M-Oj-eqh">
+                                <rect key="frame" x="190" y="285" width="35" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3w-oW-ugb">
+                                <rect key="frame" x="186" y="341" width="41" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="sWo-87-fxZ" eventType="touchUpInside" id="AdX-4m-L1H"/>
+                                    <action selector="didClickButton:" destination="Rr0-JN-oSR" eventType="touchUpInside" id="k4f-sT-6fM"/>
+                                    <action selector="didClickButton:" destination="eYW-r3-ozJ" eventType="touchUpInside" id="px8-Pp-KUz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="何の単語か分かったらここに入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MkQ-1t-fI0">
+                                <rect key="frame" x="91" y="463" width="232" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAE-hM-uVe">
+                                <rect key="frame" x="166" y="505" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="final answer"/>
+                                <connections>
+                                    <action selector="finalAnswer:" destination="eYW-r3-ozJ" eventType="touchUpInside" id="ajB-CV-oGf"/>
+                                    <action selector="finalAnswerButton:" destination="Rr0-JN-oSR" eventType="touchUpInside" id="Zj9-AN-7p5"/>
+                                    <action selector="finalAnswerButton:" destination="sWo-87-fxZ" eventType="touchUpInside" id="mCo-ln-Lwc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHq-GG-H4f">
+                                <rect key="frame" x="173" y="615" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8/8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT7-I1-Spn">
+                                <rect key="frame" x="30" y="543" width="353" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IRn-9V-oMz"/>
                     </view>
                     <navigationItem key="navigationItem" id="qIA-g1-91p"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="MkQ-1t-fI0" id="x6I-Ye-IgJ"/>
+                        <outlet property="categoryLabel" destination="ebe-ZL-0Aa" id="bVw-Ox-K0m"/>
+                        <outlet property="countLabel" destination="CT7-I1-Spn" id="B7c-PJ-m75"/>
+                        <outlet property="questionLabel" destination="PR0-cu-Gvd" id="elE-Rv-sWj"/>
+                        <outlet property="textField" destination="i9M-Oj-eqh" id="kcv-Pz-xSf"/>
+                        <segue destination="S5c-c2-zG5" kind="show" identifier="toR3" id="AON-qB-X2J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6I-xq-Pg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="2822"/>
+            <point key="canvasLocation" x="650.72463768115949" y="2821.875"/>
+        </scene>
+        <!--R3VC-->
+        <scene sceneID="tNt-jZ-DrL">
+            <objects>
+                <viewController id="S5c-c2-zG5" customClass="R3VC" customModule="HangManGameProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RGa-9R-eRq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4m-i5-fu7">
+                                <rect key="frame" x="182" y="553" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="nC5-lG-Eo0" eventType="touchUpInside" id="IJ8-lO-qLJ"/>
+                                    <action selector="didClickButton:" destination="S5c-c2-zG5" eventType="touchUpInside" id="NwW-27-YK6"/>
+                                    <action selector="didClickButton:" destination="JrO-bC-acl" eventType="touchUpInside" id="u2S-9f-gbl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-GK-dJQ">
+                                <rect key="frame" x="94" y="100" width="227" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rti-gv-cAp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vWE-8V-fzX"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="KGo-GK-dJQ" id="5PF-Vy-5Ww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPs-ni-RRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.72463768115949" y="3533.7053571428569"/>
         </scene>
         <!--Q1VC-->
         <scene sceneID="saB-ZD-NyD">
