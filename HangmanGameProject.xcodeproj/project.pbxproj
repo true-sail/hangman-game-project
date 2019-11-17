@@ -19,6 +19,7 @@
 		176873852381532500F48515 /* R2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176873842381532500F48515 /* R2VC.swift */; };
 		17E583F22381845500B49E28 /* Q3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E583F12381845500B49E28 /* Q3VC.swift */; };
 		17E583F4238189FE00B49E28 /* R3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E583F3238189FE00B49E28 /* R3VC.swift */; };
+		17E583F62381A95C00B49E28 /* scoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E583F52381A95C00B49E28 /* scoreVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		176873842381532500F48515 /* R2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = R2VC.swift; path = HangmanGameProject/R2VC.swift; sourceTree = SOURCE_ROOT; };
 		17E583F12381845500B49E28 /* Q3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Q3VC.swift; path = HangmanGameProject/Q3VC.swift; sourceTree = SOURCE_ROOT; };
 		17E583F3238189FE00B49E28 /* R3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = R3VC.swift; path = HangmanGameProject/R3VC.swift; sourceTree = SOURCE_ROOT; };
+		17E583F52381A95C00B49E28 /* scoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = scoreVC.swift; path = HangmanGameProject/scoreVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				176873842381532500F48515 /* R2VC.swift */,
 				17E583F12381845500B49E28 /* Q3VC.swift */,
 				17E583F3238189FE00B49E28 /* R3VC.swift */,
+				17E583F52381A95C00B49E28 /* scoreVC.swift */,
 			);
 			path = HangManGameProject;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				176873812381483700F48515 /* R1VC.swift in Sources */,
+				17E583F62381A95C00B49E28 /* scoreVC.swift in Sources */,
 				17E583F4238189FE00B49E28 /* R3VC.swift in Sources */,
 				176873852381532500F48515 /* R2VC.swift in Sources */,
 				17E583F22381845500B49E28 /* Q3VC.swift in Sources */,

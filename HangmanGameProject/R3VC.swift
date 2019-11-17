@@ -20,6 +20,7 @@ class R3VC: UIViewController {
         if finalAnswer == "badminton" {
                        resultLabel.text = "正解！"
                       resultLabel.textColor = .red
+            score += 1
                    } else {
                       resultLabel.text = "不正解"
                        resultLabel.textColor = .blue

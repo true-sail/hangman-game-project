@@ -20,6 +20,7 @@ class R2VC: UIViewController {
         if finalAnswer == "basketball" {
                 resultLabel.text = "正解！"
                resultLabel.textColor = .red
+            score += 1
             } else {
                resultLabel.text = "不正解"
                 resultLabel.textColor = .blue

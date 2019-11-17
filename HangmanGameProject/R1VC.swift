@@ -8,8 +8,11 @@
 
 import UIKit
 
-class R1VC: UIViewController {
+ var score = 0
 
+class R1VC: UIViewController {
+   
+    
     @IBOutlet weak var resultLabel: UILabel!
     var finalAnswer = ""
     
@@ -26,6 +29,7 @@ class R1VC: UIViewController {
         if finalAnswer == "tennis" {
             resultLabel.text = "正解！"
            resultLabel.textColor = .red
+            score += 1
         } else {
            resultLabel.text = "不正解"
             resultLabel.textColor = .blue
